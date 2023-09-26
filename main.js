@@ -27,12 +27,11 @@ function play(){
     if(userValue < computerNum) {
        resultArea.textContent = "Up!!!"
        count++;
-       alert(count);
     } else if(userValue > computerNum) {
         resultArea.textContent ="Down!!"
         count++;
-        alert(count);
     } else {
+        count++
         resultArea.textContent ="정답 입니다." + count + "번만에 맞추셨습니다."
 
     }
