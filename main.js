@@ -22,13 +22,17 @@ function pickRandomNum(){
 
 function play(){
     let userValue = userInput.value;
+    let count = 0;
 
     if(userValue < computerNum) {
        resultArea.textContent = "Up!!!"
+       count++;
     } else if(userValue > computerNum) {
         resultArea.textContent ="Down!!"
+        count++;
     } else {
-        resultArea.textContent ="정답 입니다."
+        resultArea.textContent ="정답 입니다." + count + "번만에 맞추셨습니다."
+
     }
 }
 
